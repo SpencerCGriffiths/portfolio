@@ -1,0 +1,95 @@
+.hero {
+    background-color: black;
+    background-image: url("../../../assets/portfolioPage.webp");
+    background-size: cover; 
+    background-position: center center; 
+    height: 80vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    flex-direction: column;
+
+}
+
+.name { 
+    position: relative;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 900;
+    font-size: calc(15px + 5vw);
+}
+
+.name::before,
+.name::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px; /* Adjust thickness as needed */
+  width: 40%; /* Adjust width as needed */
+  background-color: white; /* Adjust color as needed */
+}
+
+.name::before {
+  top: 7%; /* Position the line above the text */
+}
+
+.name::after {
+  bottom: 7%; /* Position the line below the text */
+}
+
+.captureText {
+    color: whitesmoke; /* Assuming you want the same text color */
+    padding-top: 20px; /* Adds space between the h1 and the paragraph */
+    width: 40%;
+}
+
+
+.scrollContainer { 
+    width: 20px;
+    height: 5vh;
+    border-radius: 2vw;
+    margin-top: 6vh;
+    border: 2px black solid; 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scrollLine {
+    width: 1px; /* Width of the line */
+    height: 25%; /* Height of the line inside the button */
+    background-color: #fff; /* Color of the line */
+    position: absolute; /* To move it inside the button */
+    animation: moveLine 1.5s ease-in-out infinite; /* Animation for moving line */
+  }
+
+@keyframes moveLine {
+0%, 100% {
+    top: 10%;
+}
+50% {
+    top: 65%;
+}
+}
+/*
+Target Class scroll button, give it a width and height to fit, round with border radius and a background colour (maybe transparent). Remove any borders’s and position relative for the internal line.  
+Change cursor to pointer, display dlex, align center and justify content center.  
+
+ 
+
+Target the scroll line, give it a width and height and background colour. Position it absolute.  
+
+ 
+
+animation: moveLine 1.5s ease-in-out infinite; /* Animation for moving line 
+Create HTML for a button with the class scroll button, create a span with class scroll line inside the button. 
+
+
+@keyframes moveLine { 0%, 100% { top: 10%; } 50% { top: 40%; } } 
+*/
+
