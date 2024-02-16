@@ -76,20 +76,3 @@
     top: 65%;
 }
 }
-/*
-Target Class scroll button, give it a width and height to fit, round with border radius and a background colour (maybe transparent). Remove any borders’s and position relative for the internal line.  
-Change cursor to pointer, display dlex, align center and justify content center.  
-
- 
-
-Target the scroll line, give it a width and height and background colour. Position it absolute.  
-
- 
-
-animation: moveLine 1.5s ease-in-out infinite; /* Animation for moving line 
-Create HTML for a button with the class scroll button, create a span with class scroll line inside the button. 
-
-
-@keyframes moveLine { 0%, 100% { top: 10%; } 50% { top: 40%; } } 
-*/
-
