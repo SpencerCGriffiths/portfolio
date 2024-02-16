@@ -1,0 +1,25 @@
+.articleProgramming { 
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+
+}
+.H2Programming { 
+    font-size: 1.3rem;
+}
+
+.titleProgramming { 
+    font-size: 1rem;
+    margin-left: 1.5rem;
+}
+
+.contentProgramming { 
+    margin-left: 3rem;
+}
+
+.logoProgramming { 
+    max-width: 234.8px; 
+    max-height: 132px; 
+    width: auto; /* Ensure the width adjusts based on the height */
+    height: auto; /* Ensure the height adjusts based on the width, maintaining aspect ratio */
+}
