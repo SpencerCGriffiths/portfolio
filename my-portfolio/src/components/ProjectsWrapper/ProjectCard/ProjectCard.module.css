@@ -1,0 +1,67 @@
+.wholeCard { 
+    background-color: #2A2A2A;
+    border-radius: 4vw;
+    width: 18vw;
+    height: auto;
+}
+
+.cardImg { 
+    width: 100%;
+    height: auto;
+    max-height: 35%;
+    object-fit: contain;
+    border-radius: 4vw 4vw 0 0; /* Rounded corners at the top only */
+}
+
+.cardTitle {
+    margin-left: .5vw;
+    margin-top: .5vh;
+    font-size: 1.5rem; /* Adjustable based on design preference */
+}
+
+.cardDesc {
+    color: #E0E0E0; /* Light grey for readability */
+    font-size: 1rem; /* Readable yet compact */
+    margin-left: 1rem;
+    overflow: hidden; /* Prevents text from overflowing */
+    text-overflow: ellipsis; /* Adds an ellipsis to text that's too long */
+}
+
+.cardGUrl {
+    color: #4A90E2; /* Bright color for links */
+    font-size: 1rem; /* Readable yet compact */
+    margin-left: 1rem;
+    text-decoration: none; /* No underline */
+    display: block; /* Ensures it's on its own line */
+}
+
+.cardTechs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .2rem;
+    margin: 0rem, .2rem, 0rem, 0rem;
+    padding-bottom: 2vw; 
+    padding-left: 1rem;
+}
+
+.cardSingleTech {
+    background-color: #4A4A4A;
+    color: #E0E0E0;
+    border-radius: 1rem; /* Rounded edges */
+    padding: 0.5vh 1vw;
+    font-size: .8rem;
+    display: inline-flex;
+    margin: 0 5px 5px 0; /* Spacing between tags */
+}
+
+
+.wholeCard:hover { 
+    /* Slightly increase the size of the card to give a lift effect */
+    transform: scale(1.05); /* This will make the card appear as if it's lifting off */
+    
+    /* Add an equal, cyan glow around the box */
+    box-shadow: 0 0 2rem rgba(0, 204, 255, 0.624); /* Adjust the color and spread as needed */
+    
+    /* Smooth transition for the transform and box-shadow to enhance the hover effect */
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}

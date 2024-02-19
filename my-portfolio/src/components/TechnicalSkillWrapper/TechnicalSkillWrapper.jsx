@@ -1,9 +1,15 @@
-import FrontEndSkills from "@/FrontEndSkills/FrontEndSkills"
+import FrontEndSkills from "@/components/FrontEndSkills/FrontEndSkills"
+import BackEndSkills from "../BackEndSkills/BackEndSkills"
+import AdditionalSkills from "../AdditionalSkills/AdditionalSkills"
+import TechnicalSkills from "../TechnicalSkills/TechnicalSkills"
 
 const TechnicalSkillsWrapper = () => { 
     return ( 
         <>
-         <FrontEndSkills />
+        <TechnicalSkills /> 
+        <FrontEndSkills />
+        <BackEndSkills /> 
+        <AdditionalSkills /> 
         </>
     )
 }

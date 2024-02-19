@@ -3,11 +3,6 @@ import styles from './FrontEndSkills.module.css'
 const FrontEndSkills = () => { 
     return ( 
         <div>
-        <p> Front-end Development and Hosting
-        Technologies: Mastery in HTML, CSS, and React, including utilizing React UI frameworks for user interface development and Axios for managing HTTP requests.
-        Performance and Accessibility: Proficient in using Lighthouse for optimizing web performance, WAVE Web Accessibility Evaluation Tools, and other accessibility tools to ensure web projects meet accessibility standards.
-        Tooling: Experienced in using Vite as an efficient build tool for modern web projects.
-        Platforms: Skilled in deploying and hosting web applications on Cloudflare, Netlify, and Vercel, ensuring optimal delivery and availability.</p>   
         <h2 className={styles.H2Programming} data-aos="fade-right"> Front-end Development and Hosting</h2>
         <article className={styles.articleProgramming}>
         <section> 

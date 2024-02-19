@@ -1,16 +1,18 @@
+import ContactWrapper from "../Contact/ContactWrapper"
+import ExperienceWrapper from "../Experience/ExperienceWrapper"
 import PersonalIntro from "../PersonalIntro/PersonalIntro"
-import Projects from "../Projects/Projects"
+import ProjectsWrapper from "../ProjectsWrapper/ProjectsWrapper"
 import TechnicalSkillsWrapper from "../TechnicalSkillWrapper/TechnicalSkillWrapper"
-import TechnicalSkills from "../TechnicalSkills/TechnicalSkills"
 import style from "./MainBody.module.css"
 const MainBody = () => {
 
     return (
         <div className={style.MainContent}>
             {/* <PersonalIntro />  */}
-            <TechnicalSkills />
             <TechnicalSkillsWrapper />
-            <Projects /> 
+            <ProjectsWrapper /> 
+            <ExperienceWrapper /> 
+            <ContactWrapper />
         </div>
     )
 }
