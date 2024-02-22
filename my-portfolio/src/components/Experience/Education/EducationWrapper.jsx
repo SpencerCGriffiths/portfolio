@@ -2,15 +2,9 @@
 
 import React, { useState } from 'react';
 import style from './EducationWrapper.module.css';
+import Accordion from '@/components/UI/Accordion/Accordion';
 
 const EducationWrapper = () => {
-    // State to keep track of which accordion item is open
-    const [openIndex, setOpenIndex] = useState(null);
-
-    const toggleAccordion = (index) => {
-        // If the clicked item is already open, close it, otherwise open the clicked item
-        setOpenIndex(openIndex === index ? null : index);
-    };
 
     return (
         <section>
@@ -25,28 +19,7 @@ const EducationWrapper = () => {
                 Philip Morant School and College - 2013
                 11 GCSEs between grades A to C
             </span>
-            <div className={style.accordionBody}>
-                <div className={style.accordion}>
-                    {[1, 2].map((item, index) => (
-                        <div key={index} className={style.container}>
-                            <div
-                                className={style.label}
-                                onClick={() => toggleAccordion(index)}
-                            >
-                                title
-                            </div>
-                            <div
-                                className={`${style.content} ${openIndex === index ? style.open : ''}`}
-                                style={{
-                                    height: openIndex === index ? 'auto' : '0',
-                                }}
-                            >
-                                This is the content that should close or open
-                            </div>
-                        </div>
-                    ))}
-                </div>
-            </div>
+        <Accordion />
         </section>
     );
 };
