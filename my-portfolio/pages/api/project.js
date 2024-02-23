@@ -10,7 +10,6 @@ export default async function handler(req, res) {
         return res.status(201).json({ message: "Created" });
     } else if (req.method === 'GET') {
         const project = await Project.find();
-        console.log(project, "api project")
         return res.status(200).json({ project });
     } else {
         // Optionally handle other methods or return a 405 Method Not Allowed error

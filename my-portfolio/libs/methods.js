@@ -21,7 +21,11 @@ export const getProjects = async () => {
 export const getJobs = async () => { 
     try {
         const jobs = await Work.find()
-        return jobs
+        const modifiedJobs = jobs.map((job) => {
+            let newJob = {...job.toObject(), _id: job._id.toString()};
+            return newJob;
+        });
+        return modifiedJobs
     } catch (error) { 
         console.error("Error in Methods - get Jobs:", error)
     }

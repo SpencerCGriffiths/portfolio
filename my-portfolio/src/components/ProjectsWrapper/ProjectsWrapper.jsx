@@ -4,7 +4,6 @@ import ProjectCard from "./ProjectCard/ProjectCard";
 const ProjectsWrapper = async () => { 
 
    const projects = await getProjects()
-   console.log(projects, "porjects in project wrapper")
 
         return ( 
             <div> 
