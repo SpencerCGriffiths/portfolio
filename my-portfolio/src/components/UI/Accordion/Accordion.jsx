@@ -4,9 +4,6 @@ import React, { useState } from 'react';
 import style from "./Accordion.module.css"
 
 const Accordion = ({jobs}) => { 
-    
-    console.log(jobs, "Job Obj in accordion")
-        const [isLoading, setIsLoading] = useState(true)
         // State to keep track of which accordion item is open
         const [openIndex, setOpenIndex] = useState(null);
 
@@ -14,7 +11,7 @@ const Accordion = ({jobs}) => {
             // If the clicked item is already open, close it, otherwise open the clicked item
             setOpenIndex(openIndex === index ? null : index);
         };
-    
+
     return ( 
         jobs ? 
 <div className={style.accordionBody}>
@@ -25,13 +22,18 @@ const Accordion = ({jobs}) => {
                 className={style.label}
                 onClick={() => toggleAccordion(index)}
             >
-            <span>
+            <span className={style.role}>
                 {job.role}
             </span>    
-            <span>
+            { job.subRole[0] === "N/A" ? null :
+            <span className={style.subRole}>
+                {job.subRole}
+            </span>
+            }
+            <span className={style.location}>
                 {job.location}
             </span>
-            <span>
+            <span className={style.dates}>
                 {`${job.dateFrom} - ${job.dateTo}`}
             </span>
             </div>
@@ -41,12 +43,11 @@ const Accordion = ({jobs}) => {
                     height: openIndex === index ? 'auto' : '0',
                 }}
             >
-                {job.description.map((descriptor) => { 
                    <ul>
-                    <li>{descriptor}</li>
-                   </ul> 
+                {job.description.map((descriptor, index) => { 
+                    return <li key={index}  className={style.listItems}>{descriptor}</li>
                 })}
-                This is the content that should close or open
+                    </ul>
             </div>
         </div>
     ))}

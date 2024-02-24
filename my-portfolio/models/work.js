@@ -20,7 +20,11 @@ const workSchema = new mongoose.Schema({
   description: { 
     type: [String], // Specifying that this is an array of strings
     required: true, // This field is now required
-  }
+  }, 
+  subRole: { 
+    type: [String], // Specifying that this is an array of strings
+    required: true, // This field is now required
+  },
 });
 
 

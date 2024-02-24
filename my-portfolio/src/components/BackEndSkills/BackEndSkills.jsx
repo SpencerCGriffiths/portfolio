@@ -1,9 +1,16 @@
+import style from "./BackEndSkills.module.css"
+
 const BackEndSkills = () => { 
-    return ( 
-        <p>
-            Back-end Development
-Database Management: Proficient in SQL and PSQL for relational database interactions, including expertise in seeding and migrations for database version control. Also experienced in using MongoDB Atlas for NoSQL database management in a project with Next.js, showcasing versatility in handling both SQL and NoSQL databases.
-        </p>
+    return (
+        <article className={style.wrapper}>  
+            <h2 className={style.title} data-aos="fade-right">Back-end Development</h2>
+            <ul className={style.unList}> 
+                <li data-aos="fade-right">SQL and PSQL for relational database interactions</li>
+                <li data-aos="fade-right">MongoDB Atlas</li>
+                <li data-aos="fade-right">NoSQL database management</li>
+                <li data-aos="fade-right">Database seeding and migrations</li>
+            </ul> 
+        </article>
     )
 }
 

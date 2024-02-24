@@ -1,0 +1,22 @@
+.wrapper { 
+    margin-top: 8vh;
+    margin-bottom: 10vh;
+}
+
+.titleWrapper{ 
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.title { 
+    display: inline-block;
+    font-size: 1.8rem;
+}
+
+/* .line { 
+    width: 100%;
+    border-top: 2px dashed white;
+    margin-bottom: 4vh;
+} */
+
