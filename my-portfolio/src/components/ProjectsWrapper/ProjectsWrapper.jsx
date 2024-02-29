@@ -11,9 +11,11 @@ const ProjectsWrapper = async () => {
                 <section className={style.titleWrapper}>
                 <h2 className={style.title}>- Projects -</h2>
                 </section>
+                <section className={style.projects}>
                 {projects && projects.map((singlePro) => { 
                 return <ProjectCard singlePro = {singlePro} key = {singlePro._id}/> }
                 )}
+                </section>
             </section>
         )
 }

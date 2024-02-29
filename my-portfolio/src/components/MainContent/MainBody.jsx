@@ -12,7 +12,7 @@ const MainBody = () => {
             <TechnicalSkillsWrapper />
             <ProjectsWrapper /> 
             <ExperienceWrapper /> 
-            <ContactWrapper />
+            {/* <ContactWrapper /> */}
         </div>
     )
 }

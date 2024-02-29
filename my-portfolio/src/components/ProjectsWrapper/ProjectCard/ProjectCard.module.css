@@ -3,13 +3,14 @@
     border-radius: 4vw;
     width: 18vw;
     height: auto;
+    min-height: 56vh;
+    max-height: 60vh;
 }
 
 .cardImg { 
     width: 100%;
-    height: auto;
-    max-height: 35%;
-    object-fit: contain;
+    height: 40%; 
+    object-fit: cover; 
     border-radius: 4vw 4vw 0 0; /* Rounded corners at the top only */
 }
 
