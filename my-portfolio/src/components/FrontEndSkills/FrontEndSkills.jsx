@@ -2,23 +2,19 @@ import styles from './FrontEndSkills.module.css'
 
 const FrontEndSkills = () => { 
     return ( 
-        <div>
-        <h2 className={styles.H2Programming} data-aos="fade-right"> Front-end Development and Hosting</h2>
         <article className={styles.articleProgramming}>
         <section> 
-        <p className={styles.titleProgramming} data-aos="fade-right">HTML, CSS and React</p>
-        <p className={styles.titleProgramming} data-aos="fade-right">Using Axios for managing HTTP requests</p>
-        <p className={styles.titleProgramming} data-aos="fade-right">Performance and Accessibility</p>
+        <h2 className={styles.H2Programming} data-aos="fade-left"> Front-end Development and Hosting</h2>
+        <p className={styles.titleProgramming} data-aos="fade-left">HTML, CSS and React</p>
+        <p className={styles.titleProgramming} data-aos="fade-left">Axios for managing HTTP requests</p>
+        <p className={styles.titleProgramming} data-aos="fade-left">Hosting with Cloudflare, Netlify and Vercel </p>
         <ul>
-            <li><p className={styles.contentProgramming} data-aos="fade-right">Proficient in optimizing web performance with Lighthouse</p></li>
-            <li><p className={styles.contentProgramming} data-aos="fade-right">Uses WAVE Web Accessibility Evaluation Tools and other accessibility tools</p></li>
-            <li><p className={styles.contentProgramming} data-aos="fade-right">Ensures web projects meet accessibility standards</p></li>
+            <li><p className={styles.contentProgramming} data-aos="fade-left">Proficient in optimising web performance with Lighthouse</p></li>
+            <li><p className={styles.contentProgramming} data-aos="fade-left">Using WAVE Web (Accessibility Evaluation Tools) and other accessibility tools</p></li>
+            <li><p className={styles.contentProgramming} data-aos="fade-left">Understanding and applying Web Content Accessibility Guidelines (WCAG)</p></li>
         </ul>
-        <p className={styles.titleProgramming} data-aos="fade-right">Hosting</p>
         <ul>
-            <li><p className={styles.contentProgramming} data-aos="fade-right">Cloudflare</p></li>
-            <li><p className={styles.contentProgramming} data-aos="fade-right">Netlify</p></li>
-            <li><p className={styles.contentProgramming} data-aos="fade-right">Vercel</p></li>
+            <li><p className={styles.contentProgramming} data-aos="fade-left"></p></li>
         </ul>
 
         </section>
@@ -32,7 +28,6 @@ const FrontEndSkills = () => {
         data-aos="fade-right"/> */}
         </section>
         </article>
-        </div>
     )
 }
 

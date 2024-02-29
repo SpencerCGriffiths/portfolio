@@ -18,9 +18,10 @@ const TechnicalSkills = () => {
 
     return ( 
         <div>
-        <h2 className={styles.H2Programming} data-aos="fade-right"> Programming Language's</h2>
         <article className={styles.articleProgramming}>
+        
         <section> 
+        <h2 className={styles.H2Programming} data-aos="fade-right"> Programming Language's</h2>
         <p className={styles.titleProgramming} data-aos="fade-right">JavaScript</p> 
         <p className={styles.contentProgramming} data-aos="fade-right">Core programming language, utilized in both Node.js for server-side development and browsers for client-side scripts.</p>
         </section>

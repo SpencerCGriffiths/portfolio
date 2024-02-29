@@ -1,15 +1,21 @@
+import style from "./AdditionalSkills.module.css"
+
 const AdditionalSkills = () => { 
-    return ( 
-        <p>
-            Testing, Methodologies, and Additional Expertise
-Test Driven Development (TDD): Embraces a test-first approach in development, enhancing code reliability and maintainability.
-Testing Tools: Proficient in using Jest for unit testing and Supertest for API testing, ensuring comprehensive test coverage.
-Agile and SCRUM: Experienced in Agile and SCRUM methodologies, facilitating efficient and adaptive project management.
-Paired Programming: Advocates for paired programming to bolster code quality and foster team collaboration.
-Software Development Lifecycle (SDL): Well-versed in the stages of the software development lifecycle, optimizing the development process.
-Tech Communication: Possesses strong technical communication skills, essential for team collaboration, stakeholder engagement, and project documentation.
-        </p>
-    )
+    return (
+<section className={style.additionalSkillsWrapper}>
+        <article>
+        <h2 className={style.title} data-aos="fade-left"> Testing, Methodologies and Additional Expertise</h2> 
+        <ul className={style.unList}>
+            <li className={style.li} data-aos="fade-left">Agile and SCRUM methodologies</li>
+            <li className={style.li} data-aos="fade-left">Test Driven Development (TDD) with a test-first approach</li>
+            <li className={style.li} data-aos="fade-left">Jest proficiency for unit testing & Supertest for API testing</li>
+            <li className={style.li} data-aos="fade-left">Paired Programming & team collaboration</li>
+            <li className={style.li} data-aos="fade-left">Strong communication & project documentation</li>
+            <li className={style.li} data-aos="fade-left">utilising Software Development Lifecycle(SDL) for individual and group projects</li>
+        </ul>
+        </article>
+</section>
+)
 }
 
 export default AdditionalSkills

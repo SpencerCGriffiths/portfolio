@@ -1,8 +1,29 @@
 .container { 
     background-color: #333333;
-    height: 7.5vh;
     width: 100%;
-    margin-top: 0vh;
-    border-top: 0vh;
-    padding-top: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem; /* Adjust padding as needed */
+}
+
+.title {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem; /* Adjust font size as needed */
+}
+
+.linkWrapper {
+    display: flex;
+}
+
+.linkWrapper span {
+    margin-right: 20px; /* Adjust margin between items as needed */
+    display: flex;
+    align-items: center;
+    color: white; /* Set text color as needed */
+}
+
+.linkWrapper a {
+    color: white; /* Set link color as needed */
+    text-decoration: none; /* Remove default underline */
 }

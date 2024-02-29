@@ -28,10 +28,8 @@ const projectSchema = new mongoose.Schema({
   }
 });
 
-console.log(mongoose.models, "project model 1")
 
 const Project = mongoose.models.Project || mongoose.model('Project', projectSchema);
 
-console.log(mongoose.models, "project model 2")
 
 export default Project;

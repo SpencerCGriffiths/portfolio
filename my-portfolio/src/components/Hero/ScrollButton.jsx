@@ -7,7 +7,7 @@ const ScrollButton = () => {
 
     const scroll = () => { 
         window.scrollBy({ 
-            top: 100, // Adjust this value to control the scroll distance
+            top: 720, 
             left: 0, 
             behavior: 'smooth' 
           });

@@ -1,42 +1,60 @@
 .accordion { 
-    width: 800px;
-    margin: 90px auto;
-    color: black;
-    background-color: white;
-    padding: 45px 45px;
+    width: 100%;
+    color: #E0E0E0;
+    background-color: #2A2A2A;
+    border-radius: 2.5rem;
 }
 
-.accordion .container {
-    position: relative;
-    margin: 10px 10px;
-  }
 
 .accordion .label {
 position: relative;
-padding: 10px 0;
-font-size: 30px;
-color: black;
+padding: 1rem 1.5rem 0.5rem;
+font-size: 1.5rem;
+color: #E0E0E0;
 cursor: pointer;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 .accordion .label::before {
     content: '+';
-    color: black;
+    color: #E0E0E0;
     position: absolute;
-    top: 50%;
-    right: -5px;
-    font-size: 30px;
+    top: 3rem;
+    right: 2rem;
+    font-size: 2rem;
     transform: translateY(-50%);
   }
 
 
   .accordion .content {
+    padding-left: 3rem;
+    padding-right: 1rem; 
     position: relative;
-    background: white;
-    height: 0;
-    font-size: 20px;
+    background: #808080;
+    font-size: 1.1rem;
     text-align: justify;
-    width: 780px;
+    width: 100%;
     overflow: hidden;
     transition: 0.5s;
   }
+
+  .role { 
+    width: 100%; 
+  }
+
+  .subRole { 
+    width: 100%
+  }
+
+  .dates { 
+    margin-left: auto;
+  }
+
+  .listItems { 
+    list-style-type: circle; 
+    padding-left: 1rem;
+
+  }
+    

@@ -1,43 +1,50 @@
-
-.accordion { 
-    width: 800px;
-    margin: 90px auto;
-    color: black;
-    background-color: white;
-    padding: 45px 45px;
+.educationWrapper { 
+  display: flex; 
+  flex-direction: column;
+  align-items: center; /* This will center the child elements */
+  justify-content: center; /* This will center the .educationWrapper itself in its container */
+  width: 40vw;
+  margin: auto; /* This will automatically center the div within its parent */
+  height: 100%; /* If you want it to take up the full height of its parent */
 }
 
-.accordion .container {
-    position: relative;
-    margin: 10px 10px;
-  }
+.oneEd {
+  width: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  position: relative; /* Position is relative to place the pseudo-element correctly */
+  padding-bottom: 2rem; /* Give some space for the line */
 
-.accordion .label {
-position: relative;
-padding: 10px 0;
-font-size: 30px;
-color: black;
-cursor: pointer;
 }
 
-.accordion .label::before {
-    content: '+';
-    color: black;
-    position: absolute;
-    top: 50%;
-    right: -5px;
-    font-size: 30px;
-    transform: translateY(-50%);
-  }
+.qualification { 
+  margin-bottom: .1rem; /* Provide space between this and the next element */
+  font-size: 1.3rem;
+  text-align: center; /* Center the text within .qualification */
+}
 
+.establishmentDateWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* This will put space between .establishment and .date */
+  width: 100%; /* Ensure it spans the full width */
+}
 
-  .accordion .content {
-    position: relative;
-    background: white;
-    height: 0;
-    font-size: 20px;
-    text-align: justify;
-    width: 780px;
-    overflow: hidden;
-    transition: 0.5s;
-  }
+.establishment { 
+  font-size: 1.2rem;
+}
+
+.oneEd:not(:last-child)::after {
+  content: ''; /* Required for pseudo-elements */
+  display: block; /* Display as block to give it width and height */
+  height: 2px; /* Height of the line */
+  width: 50px; /* Width of the line, adjust as necessary */
+  background-color: #E0E0E0; /* Color of the line */
+  margin-top: 1rem; /* Space between the line and the content above it */
+  margin-bottom: 1rem; /* Space between the line and the content above it */
+  position: absolute;
+  bottom: 0; /* Position at the bottom of the .oneEd element */
+  left: 50%; /* Start from the middle */
+  transform: translateX(-50%); /* Center the line */
+}
