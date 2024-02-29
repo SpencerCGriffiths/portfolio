@@ -1,9 +1,9 @@
-const Footer = () => { 
-    // return ( 
-    //     <>
-    //     <span> Footer </span>
-    //     </>
-    // )
-}
+// const Footer = () => { 
+//     // return ( 
+//     //     <>
+//     //     <span> Footer </span>
+//     //     </>
+//     // )
+// }
 
-export default Footer
+// export default Footer
