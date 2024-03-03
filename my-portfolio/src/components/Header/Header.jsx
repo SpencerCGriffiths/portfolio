@@ -6,7 +6,7 @@ import { UilMobileAndroid } from '@iconscout/react-unicons'
 
 const Header = () => { 
     return (
-        <div className={style.container}>
+        <article className={style.container}>
             <h2 className={style.title}>Spencer.C.G - Software Engineer</h2>
             <div className={style.linkWrapper}>
             <a href="https://github.com/SpencerCGriffiths"><span><UilGithub /> Github </span></a>
@@ -14,7 +14,7 @@ const Header = () => {
             <span><UilEnvelopeEdit /> s.clarkegriffiths@gmail.com </span>
             <span><UilMobileAndroid /> 07464610241 </span>
             </div>
-        </div>
+        </article>
     )
 }
 
