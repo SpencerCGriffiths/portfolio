@@ -19,7 +19,7 @@ const EducationWrapper = () => {
             <h4 className={style.establishment}>Colchester Sixth Form and College 2014</h4>  
             </section>
             <section className={style.oneEd}>
-            <h3 className={style.qualification}>11 GCSE'&#39;s A - C</h3>
+            <h3 className={style.qualification}>11 GCSE&apos;s A - C</h3>
             <h4 className={style.establishment}>Philip Morant School and College 2013</h4>  
             </section>
         </article>
