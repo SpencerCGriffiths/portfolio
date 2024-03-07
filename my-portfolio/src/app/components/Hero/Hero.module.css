@@ -1,6 +1,6 @@
 .hero {
     background-color: black;
-    background-image: url("../../../public/portfolioPage.webp");
+    background-image: url("../../../../public/portfolioPage.webp");
     background-size: cover; 
     background-position: center center; 
     height: 80vh;

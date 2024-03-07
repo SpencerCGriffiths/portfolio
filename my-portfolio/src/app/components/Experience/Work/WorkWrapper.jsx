@@ -1,4 +1,4 @@
-import Accordion from "@/components/UI/Accordion/Accordion";
+import Accordion from "../../UI/Accordion/Accordion";
 import { getJobs } from "../../../../libs/methods";
 
 const WorkWrapper = async () => {

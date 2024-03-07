@@ -1,4 +1,4 @@
-import { getProjects } from "../../../libs/methods";
+import { getProjects } from "@/libs/methods";
 import ProjectCard from "./ProjectCard/ProjectCard";
 import style from "./ProjectsWrapper.module.css"
 
