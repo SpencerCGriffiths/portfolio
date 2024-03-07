@@ -1,6 +1,17 @@
+'use client'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 import styles from './FrontEndSkills.module.css'
 
 const FrontEndSkills = () => { 
+
+    useEffect(() => { 
+        AOS.init({
+                duration: 1200,
+            });
+    }, []);
+    
     return ( 
         <article className={styles.articleProgramming}>
         <section> 
@@ -17,15 +28,6 @@ const FrontEndSkills = () => {
             <li><p className={styles.contentProgramming} data-aos="fade-left"></p></li>
         </ul>
 
-        </section>
-        <section>
-        {/* <Image
-        src="/JavaScriptLogo.png" // Path relative to the public folder
-        alt="JavaScript Logo"
-        width={587} // Desired width (can adjust as needed)
-        height={330} // Desired height (can adjust as needed)
-        className={styles.logoProgramming}
-        data-aos="fade-right"/> */}
         </section>
         </article>
     )

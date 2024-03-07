@@ -1,7 +1,7 @@
 "use server"
 
-import Project from "../models/project"
-import Work from "../models/work"
+import Project from "../models/project";
+import Work from "../models/work";
 import connectMongoDB from "./mongodb";
 
 export const getProjects = async () => { 
