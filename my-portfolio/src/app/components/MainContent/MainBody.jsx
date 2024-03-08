@@ -10,6 +10,7 @@ const MainBody = () => {
             <ProjectsWrapper /> 
             <ExperienceWrapper /> 
         </div>
+        
     )
 }
 
