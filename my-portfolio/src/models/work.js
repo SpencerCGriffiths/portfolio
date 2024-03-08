@@ -25,6 +25,10 @@ const workSchema = new mongoose.Schema({
     type: [String], // Specifying that this is an array of strings
     required: true, // This field is now required
   },
+  index: { 
+    type: [Number],
+    required: true,
+  }
 });
 
 
