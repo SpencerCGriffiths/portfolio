@@ -8,6 +8,7 @@ const Accordion = ({jobs}) => {
         // State to keep track of which accordion item is open
         const [openIndex, setOpenIndex] = useState(null);
 
+        
         const toggleAccordion = (index) => {
             // If the clicked item is already open, close it, otherwise open the clicked item
             setOpenIndex(openIndex === index ? null : index);
